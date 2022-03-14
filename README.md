@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Data ops
 
 Code for blog at http://www.startdataengineering.com/post/cicd-dbt
@@ -19,3 +20,7 @@ docker run --rm -v $(pwd):/usr/app -v $(pwd):/root/.dbt fishtownanalytics/dbt:0.
 docker run --rm -ip 8080:8080 -v $(pwd):/usr/app -v $(pwd)/:/root/.dbt fishtownanalytics/dbt:0.19.0 docs serve
 docker run --rm -ip 8080:8080 -v $(pwd):/usr/app -v $(pwd)/:/root/.dbt fishtownanalytics/dbt:0.19.0 clean
 ```
+=======
+# dbt_development
+dbt development
+>>>>>>> d8f3163519390cb76100a704ccf306f129f56477
