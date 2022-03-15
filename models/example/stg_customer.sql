@@ -1,5 +1,5 @@
 with source as (
-      select * from {{ ref('customer') }}
+      select * from {{ var('seed_schema')('customers') }}
 ),
 
 stage_customer as (
