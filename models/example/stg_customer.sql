@@ -1,5 +1,5 @@
 with source as (
-      select * from {{ var('seed_schema')('customers') }}
+      select * from dbt_venkatachaari.customer
 ),
 
 stage_customer as (

@@ -1,5 +1,5 @@
 with source as (
-      select * from {{ var('seed_schema')('orders') }}
+      select * from dbt_venkatachaari.orders
 ),
 
 stage_order as (
