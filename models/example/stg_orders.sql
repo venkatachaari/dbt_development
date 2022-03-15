@@ -13,6 +13,6 @@ stage_order as (
 	     order_delivered_customer_date,
 	     order_delivered_delivery_date
 	     from source
-),
+)
 
 select * from stage_order
