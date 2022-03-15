@@ -5,7 +5,7 @@ with source as (
 stage_customer as (
       select 
              customer_id,
-	     zip_code,
+	     zipcode,
 	     city,
 	     state_code
 	     from source
