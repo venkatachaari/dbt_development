@@ -1,14 +1,13 @@
 with source as (
-      select * from {{ var('seed_schema')('customers') }}
+      select * from dbt_venkatachaari.customer
 ),
 
 stage_customer as (
       select 
-             customer_order_id,
-	     customer_uniquer_id,
-	     customer_zip_code_prefix,
-	     customer_city,
-	     customer_st
+             customer_id,
+	     zipcode,
+	     city,
+	     state_code
 	     from source
 )
 

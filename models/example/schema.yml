@@ -5,7 +5,7 @@ models:
     - name: stg_customer
       description: "A starter dbt model"
       columns:
-          - name: customer_unique_id
+          - name: customer_id
             description: "The primary key for this table"
             tests:
                 - not_null
