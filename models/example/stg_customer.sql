@@ -4,11 +4,10 @@ with source as (
 
 stage_customer as (
       select 
-             customer_order_id,
-	     customer_uniquer_id,
-	     customer_zip_code_prefix,
-	     customer_city,
-	     customer_st
+             customer_id,
+	     zip_code,
+	     city,
+	     state_code
 	     from source
 )
 

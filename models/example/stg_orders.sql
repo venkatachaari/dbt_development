@@ -5,7 +5,7 @@ with source as (
 stage_order as (
       select 
              order_id,
-             customer_order_id,
+             customer_id,
 	     order_status,
 	     order_purchase_timestamp,
 	     order_approved_at,
