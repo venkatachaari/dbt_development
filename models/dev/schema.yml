@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+   - name: dev
+     description: "Dev database"
+     database: dev
+     schema: dbt_venkatachaari
+     tables:
+       - name: customer
