@@ -7,11 +7,8 @@ with source_model as (
 
 ), 
 
-final ( 
-	select * from source_model
-)
+select * from source_model
 
-select * from final
 
 
 
