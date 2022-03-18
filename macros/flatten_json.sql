@@ -21,9 +21,12 @@ lateral flatten(input=>{{ json_column }}) json
 
 select
 JSON_DATA_RAW,
+
 {% for column_name in results_list %}
-{{ json_column }}:{{ column_name::varchar as {{ column_name }}{% if not loop.last %},{% end if %}
+{{ json_column }}:{{ column_name::varchar as {{ column_name }}{% if not loop.last %},{% endif %}
 {% endfor %}
+
+
 from {{ model_name }}
 
 
