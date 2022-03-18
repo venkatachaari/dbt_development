@@ -7,3 +7,4 @@ sources:
      schema: dbt_venkatachaari
      tables:
        - name: customer
+       - name: json_raw
