@@ -23,7 +23,7 @@ select
 JSON_DATA_RAW,
 
 {% for column_name in results_list %}
-{{ json_column }}:{{ column_name::varchar as {{ column_name }}{% if not loop.last %},{% endif %}
+{{ json_column }}:{{ column_name }}::varchar as {{ column_name }}{% if not loop.last %},{% endif %}
 {% endfor %}
 
 
