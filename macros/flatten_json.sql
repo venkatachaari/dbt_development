@@ -1,4 +1,4 @@
-{ % macro flatten_json(model_name, json_column) % }
+{% macro flatten_json(model_name, json_column) %}
 
 
 {% set  json_column_query %}
