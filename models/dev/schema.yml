@@ -12,6 +12,6 @@ sources:
          freshness:
            warn_after: { count: 20, period: minute }
            error_after: { count: 40, period: minute }
-         loaded_at_field: crt_ts
+         loaded_at_field: "convert_timezone('America/Los_Angeles', 'UTC', crt_ts)"
          columns:
            - name: crt_ts
