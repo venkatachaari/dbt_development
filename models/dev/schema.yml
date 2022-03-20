@@ -5,13 +5,13 @@ sources:
      description: "Dev database"
      database: dev
      schema: dbt_venkatachaari
-     freshness:
-       warn_after: { count: 20, period: minute }
-       error_after: { count: 40, period: minute }
-     loaded_at_field: crt_ts
      tables:
        - name: customer
        - name: json_raw
        - name: dbt_audits
+         freshness:
+           warn_after: { count: 20, period: minute }
+           error_after: { count: 40, period: minute }
+         loaded_at_field: crt_ts
          columns:
            - name: crt_ts
